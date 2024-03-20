@@ -1,7 +1,7 @@
 captainVersion: 4
 services:
     $$cap_appname:
-        image: lscr.io/linuxserver/webtop:ubuntu-xfce
+        image: saifmaruf/cyarchmind:ubuntu-v10
         hostname: $$cap_appname.$$cap_root_domain
         environment:
             TZ: $$cap_WEBTOP_TZ
@@ -49,7 +49,6 @@ caproverOneClickApp:
         - id: $$cap_WEBTOP_PASSWORD
           label: Password
           description: HTTP basic authentication password. Default is `abc`. If unset there will be no authentication.
-          defaultValue: $$cap_gen_random_hex(16)
         - id: $$cap_WEBTOP_TITLE
           label: Title
           defaultValue: ArchMind Lab

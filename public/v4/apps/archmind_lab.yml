@@ -15,15 +15,15 @@ services:
         caproverExtra:
             containerHttpPort: 3000
 caproverOneClickApp:
-    displayName: KyArchMindLab
-    description: Web hosted lab for kyarchmind students.
+    displayName: CyArchMindLab
+    description: Web hosted lab for CyArchMind students.
     isOfficial: true
     instructions:
         start: |-
-            KyArchMind Lab containing full desktop environments in officially supported flavors accessible via any modern web browser.
+            CyArchMind Lab containing full desktop environments in officially supported flavors accessible via any modern web browser.
             Please note, that the Docker socket is not mounted and that hardware acceleration is disabled.
         end: >
-            KyArchMind has been successfully deployed! It might take few moments before it's fully started.
+            CyArchMind has been successfully deployed! It might take few moments before it's fully started.
             Please turn on "Websocket Support" in the settings.
             You can access it at http://$$cap_appname.$$cap_root_domain with login user `$$cap_WEBTOP_CUSTOM_USER` and password `$$cap_WEBTOP_PASSWORD`
     variables:
